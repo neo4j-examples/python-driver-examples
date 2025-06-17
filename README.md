@@ -2,7 +2,7 @@
 
 This repository contains code examples to use Python with Neo4j Aura.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/martinohanlon/neo4j-py-example)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/neo4j-examples/python-driver-examples)
 
 > [!IMPORTANT]  
 > To use GitHub Codespaces you will need to login with a GitHub account. 
