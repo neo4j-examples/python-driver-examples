@@ -1,0 +1,28 @@
+{
+	"name": "Neo4j Python Examples",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+	"postCreateCommand": "bash .devcontainer/post_create.sh",
+	"customizations": {
+		"codespaces": {
+			"openFiles": [
+				".devcontainer/SETUP.md",
+				".env.example",
+				"test_environment.py",
+				"examples/connect.py"
+				]
+		},
+		"vscode": {
+			"settings": {
+				"python.createEnvironment.trigger": "off",
+				"workbench.editorAssociations": {
+					"*.md": "vscode.markdown.preview.editor"
+				}
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.debugpy",
+				"neo4j-extensions.neo4j-for-vscode"
+				]
+		}
+	}
+}
