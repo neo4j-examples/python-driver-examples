@@ -24,7 +24,8 @@ driver.verify_connectivity()
 
 # Run a simple query to count nodes in the database
 records, summary, keys = driver.execute_query(
-    "RETURN COUNT {()} AS count"
+    "RETURN COUNT {()} AS count",
+    database_=os.getenv('NEO4J_DATABASE')
 )
 
 # Get the first record

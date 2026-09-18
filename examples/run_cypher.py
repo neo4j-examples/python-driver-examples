@@ -33,6 +33,7 @@ RETURN p.name as name, c.name as company, w.position as position
 # Execute the query with a parameter
 records, summary, keys = driver.execute_query(
     cypher_query,
+    database_=os.getenv('NEO4J_DATABASE'),
     location='London'
 )
 
@@ -41,6 +42,7 @@ records, summary, keys = driver.execute_query(
 
 # records, summary, keys = driver.execute_query(
 #     cypher_query,
+#     database_=os.getenv('NEO4J_DATABASE'),
 #     routing_='r',
 #     location='London'
 # )

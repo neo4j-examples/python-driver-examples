@@ -62,6 +62,7 @@ with open(FILE_PATH, newline='') as csvfile:
         # Execute the query once for each batch
         records, summary, keys = driver.execute_query(
             cypher_query,
+            database_=os.getenv('NEO4J_DATABASE'),
             rows=batch
         )
 
