@@ -53,6 +53,7 @@ with open(FILE_PATH, newline='') as csvfile:
         # Execute the query with parameters
         records, summary, keys = driver.execute_query(
             cypher_query,
+            database_=os.getenv('NEO4J_DATABASE'),
             id=row['id'],
             name=row['name'],
             gov_id=row['gov_id'],
@@ -64,6 +65,7 @@ with open(FILE_PATH, newline='') as csvfile:
         # Alternatively, you can pass the row as parameters
         # records, summary, keys = driver.execute_query(
         #     cypher_query,
+        #     database_=os.getenv('NEO4J_DATABASE'),
         #     parameters_= row
         # )
 

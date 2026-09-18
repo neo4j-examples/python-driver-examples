@@ -17,7 +17,7 @@ driver = GraphDatabase.driver(
 driver.verify_connectivity()
 
 # Create a session to run a transaction
-with driver.session() as session:
+with driver.session(database=os.getenv('NEO4J_DATABASE')) as session:
 
     # Create a work unit for the transaction
     def create_person(tx, name, age):

@@ -36,6 +36,7 @@ RETURN
 # Execute the query using the Result transformer 
 df = driver.execute_query(
     cypher_query,
+    database_=os.getenv('NEO4J_DATABASE'),
     result_transformer_=Result.to_df,
     location='London'
 )
