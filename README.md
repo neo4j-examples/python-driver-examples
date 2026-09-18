@@ -21,6 +21,7 @@ pip install neo4j
 - [`connect.py` - Connect to a Neo4j Graph Database](examples/connect.py)
 - [`run_cypher.py` - Run a Cypher statement](examples/run_cypher.py)
 - [`create_data.py` - Read data from a CSV file and create nodes and relationships](examples/create_data.py)
+- [`create_data_batch.py` - Read data from a CSV file and create nodes and relationships in batches](examples/create_data_batch.py)
 - [`transaction.py` - Execute cypher in a transaction](examples/transaction.py)
 - [`export_to_dataframe.py` - Export data to a Pandas DataFrame ](examples/export_to_dataframe.py)
 
